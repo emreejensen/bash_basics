@@ -14,3 +14,13 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
+
+# Get the current day of the week
+day_of_week=$(date +%A)
+
+# Check if today is Saturday or Sunday
+if [ "$day_of_week" = "Saturday" ] || [ "$day_of_week" = "Sunday" ]; then
+   echo "Today is the weekend! Yay!"
+else
+   echo "Today is a weekday. Keep working!"
+fi
